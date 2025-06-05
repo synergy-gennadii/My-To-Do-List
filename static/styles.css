@@ -1,0 +1,119 @@
+/* D:\WebAppNginxSQL\static\styles.css */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+.todo-input-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.todo-input-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.todo-input-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-input-form button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+li .todo-title {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+li .actions {
+    display: flex;
+    gap: 5px;
+}
+
+li .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+li .actions .complete-btn {
+    color: #28a745;
+}
+
+li .actions .complete-btn.active {
+    color: #ffc107;
+}
+
+li .actions .delete-btn {
+    color: #dc3545;
+}
+
+li .actions button:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.status-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.status-message.success {
+    color: #28a745;
+}
+
+.status-message.error {
+    color: #dc3545;
+}
